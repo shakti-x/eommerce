@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BrightCart – E-Commerce Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+/* BASIC STYLING */
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+
+/* HEADER */
+header{
+    background:#222;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    margin: 0 12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffcc00;
+}
+
+/* PRODUCT GRID */
+.products{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.product{
+    background:white;
+    border-radius:10px;
+    padding:10px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.product img{
+    width:100%;
+    border-radius:10px;
+}
+
+button{
+    padding:10px 15px;
+    background:#222;
+    color:white;
+    border:none;
+    border-radius:5px;
+    margin-top:8px;
+}
+
+button:hover{
+    background:#ffcc00;
+    color:black;
+    cursor:pointer;
+}
+
+/* CART */
+.cart, .checkout{
+    padding:20px;
+}
+
+.cart-item{
+    background:white;
+    padding:12px;
+    margin-bottom:10px;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer{
+    background:#222;
+    color:white;
+    padding:15px;
+    text-align:center;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<!---------------- HEADER ------------------>
+<header>
+    <h1>BrightCart Store</h1>
+    <p>Your One-Stop Shop for Fashion & Gadgets</p>
+    <nav>
+        <a href="#products">Products</a>
+        <a href="#cart">Cart</a>
+        <a href="#checkout">Checkout</a>
+    </nav>
+</header>
+
+<!---------------- PRODUCT SECTION ------------------>
+<section id="products">
+    <h2 style="text-align:center; margin-top:20px;">Featured Products</h2>
+
+    <div class="products">
+
+        <!-- PRODUCT 1 -->
+        <div class="product">
+            <img src="shoppingcloths.webp"alt="image"width="100"height="90">
+            <h3>Classic Cotton T-Shirt</h3>
+            <p>₹499</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="product">
+            <img src="headphone.jpg" alt="image" width="100" height="90">
+            <h3>Wireless Headphones</h3>
+            <p>₹1,499</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="product">
+            <img src="1B50CCC6-8F95-47C6-AA00-465B9D0DCFB1.jpeg"alt="image"width="100"height="90">
+            <h3>Handmade Tote Bag</h3>
+            <p>₹799</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- PRODUCT 4 -->
+        <div class="product">
+            <img src="smartwatch.jpg" alt="image" width="100" height="90">
+            <h3>Digital Wrist Watch</h3>
+            <p>₹999</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+<section id="cart" class="cart">
+    <h2>Your Shopping Cart</h2>
+    <div class="cart-item">
+        <strong>Classic Cotton T-Shirt</strong><br>
+        Price: ₹499 <br>
+        Quantity: 1
+    </div>
+    <div class="cart-item">
+        <strong>Wireless Headphones</strong><br>
+        Price: ₹1,499 <br>
+        Quantity: 1
+    </div>
+
+    <p><strong>Total: ₹1,998</strong></p>
+</section>
+<section id="checkout" class="checkout">
+    <h2>Checkout</h2>
+
+    <form>
+        <label>Full Name:</label><br>
+        <input type="text" required><br><br>
+
+        <label>Address:</label><br>
+        <textarea rows="4" required></textarea><br><br>
+
+        <label>Payment Method:</label><br>
+        <select required>
+            <option>Cash on Delivery</option>
+            <option>UPI</option>
+            <option>Credit/Debit Card</option>
+        </select><br><br>
+
+        <button>Place Order</button>
+    </form>
+</section>
+<footer>
+    thank  you for Shopping
+    © 2025 BrightCart — All Rights Reserved.
+</footer>
+
+</body>
+</html>
